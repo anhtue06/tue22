@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			width: 80%;
+			margin: 0 auto;
+			background-color: f2f3f4d5;
+			font-family: arial, serif;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		.top{
+			width: 100%;
+			height: 100px;
+			background-color: gray;
+			float: left;
+			position: relative;
+		}
+		.top img{
+			width: 80px;
+			height: 80px;
+			float: left;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			border-radius: 50%;
+		}
+		h1{
+			text-align: center;
+			font-family: cursive;
+		}
+		.menu{
+			width: 100%;
+			height: 50px;
+			background-color: yellow;
+			float: left;
+		}
+		.menu li{
+			list-style: none;
+			display: inline-block;
+			margin-right: 20px;
+		}
+		.menu a{
+			text-decoration: none;
+			font-weight: 20px;
+		}
+		.menu a:hover{
+			color:blue;
+		}
+		.container{
+			width: 100%;
+			height: 300px;
+			display: flex;
+		}
+		.left{
+			width: 30%;
+			height: 300px;
+			background-color: green;
+		}
+		.center{
+			width: 40%;
+			height: 300px;
+			background-color: pink;
+		}
+		.right{
+			width: 30%;
+			height: 300px;
+			background-color: red;
+		}
+		.bottom{
+			width: 100%;
+			height: 80px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8nP6NvyZni4jEzyJ3hFGRy1r-toxPT0MVBQ&s">
+		<h1>TIN TỨC 24H</h1>
+	</div>
+	<div class="menu">
+		<li> <a href="#">Chính trị</a></li>
+		<li> <a href="#">Xã hội</a></li>
+		<li> <a href="#">Sức khỏe</a></li>
+		<li> <a href="#">Giáo dục</a></li>
+		<li> <a href="#">Thể thao</a></li>
+		<li> <a href="#">Liên hệ</a></li>
+	</div>
+	<div class="container">
+		<div class="left">\
+		<label for="hoten">Họ tên:*</label><br>
+		<label for="diachi">Địa chỉ:</label><br>
+		<label for="sdt">Số điện thoại:*</label><br>
+		<label for="gt">Giới tính:</label><br>
+		<label for="namsinh">Năm sinh</label><br>
+		<label for="nd">Nội dung liên hệ</label>
+		</div>
+		<div class="center">
+		<input type="text" name="ten" placeholder="Họ tên"><br>
+		<input type="text" name="diachi" placeholder="Địa Chỉ"><br>
+		<input type="tel" name="sdt" placeholder="Số điện thoại"><br>
+		<input type="radio" name="gt" value="nam">Nam
+		<input type="radio" name="gt" value="nu">Nữ<br>
+		<select name="ngaysinh">
+			<option>2005</option>
+			<option>2004</option>
+			<option>2003</option>
+			<option>2002</option>
+		</select><br>
+		<textarea name="comments"  cols="50" rows="5"></textarea>
+		<input type="submit" name="sb" value="Gửi thông tin góp ý">
+		<input type="reset" name="rs" value="Nhập lại">
+		</div>
+		<div class="right">			
+		</div>
+	</div>
+	<div class="bottom">		
+	</div>
+</body>
+</html>
